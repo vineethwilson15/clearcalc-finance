@@ -21,8 +21,7 @@ export default function UsSeoIndexPage() {
       <header className="card">
         <h1 className="text-3xl font-bold text-white">US SEO Template Index</h1>
         <p className="mt-2 text-slate-300">
-          Phase 2 route templates for long-tail finance calculator traffic. These pages are
-          pre-rendered and ready for localized content expansion.
+          Browse location-specific finance calculators for tax, salary, mortgage, and loan planning.
         </p>
       </header>
 

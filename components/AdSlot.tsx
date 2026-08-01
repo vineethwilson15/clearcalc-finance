@@ -36,7 +36,7 @@ export function AdSlot({ location, slotKey }: AdSlotProps) {
   if (!canRenderAds) {
     return (
       <div className="ad-slot" aria-label={`Advertisement placeholder at ${location}`}>
-        Ad slot configured for {location} once AdSense client/slot IDs are set.
+        Sponsored placement
       </div>
     );
   }

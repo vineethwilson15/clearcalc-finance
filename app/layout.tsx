@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
 const adSenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID?.trim();
@@ -7,6 +8,9 @@ const shouldLoadAdSense = Boolean(adSenseClientId?.startsWith("ca-pub-"));
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clearcalc-finance.netlify.app"),
+  icons: {
+    icon: "/icon.svg"
+  },
   title: {
     default: "ClearCalc Finance",
     template: "%s | ClearCalc Finance"
@@ -32,6 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="FE9qQUWzHeN9N6RWPtyJeY5xzup7rIdWnPsVoJyXEWA"
+        />
+      </head>
       <body>
         {shouldLoadAdSense ? (
           <Script
@@ -41,6 +51,7 @@ export default function RootLayout({
             crossOrigin="anonymous"
           />
         ) : null}
+        <SiteHeader />
         <main>{children}</main>
       </body>
     </html>
