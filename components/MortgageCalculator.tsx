@@ -73,6 +73,9 @@ export function MortgageCalculator() {
       <section className="card grid gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <p className="label">Scenario presets</p>
+          <p className="mt-1 text-sm text-slate-400">
+            Pick a starting point, then fine-tune the inputs below to match your own loan.
+          </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {scenarios.map((scenario) => (
               <button
@@ -150,6 +153,9 @@ export function MortgageCalculator() {
 
       <section className="card">
         <h2 className="text-xl font-semibold text-white">Estimated Results</h2>
+        <p className="mt-2 text-sm text-slate-400">
+          Results update instantly when you change any input.
+        </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <div>
             <p className="text-xs uppercase tracking-wide text-slate-400">Monthly payment</p>

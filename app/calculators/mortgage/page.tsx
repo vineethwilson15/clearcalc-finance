@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function MortgagePage() {
   return (
     <div className="space-y-6">
-      <Link className="text-sm text-brand-300 hover:underline" href="/">
+      <Link className="text-sm text-brand-300 hover:underline" href="/calculators">
         {"<"} Back to calculator hub
       </Link>
       <header className="card">
@@ -19,6 +19,9 @@ export default function MortgagePage() {
         <p className="mt-2 text-slate-300">
           Use this mortgage payment calculator to estimate your monthly cost and lifetime
           interest before choosing a home loan.
+        </p>
+        <p className="mt-3 text-sm text-slate-400">
+          Start with a preset, then adjust the numbers to match your own loan terms.
         </p>
       </header>
       <MortgageCalculator />

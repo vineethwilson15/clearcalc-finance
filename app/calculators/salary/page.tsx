@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function SalaryPage() {
   return (
     <div className="space-y-6">
-      <Link className="text-sm text-brand-300 hover:underline" href="/">
+      <Link className="text-sm text-brand-300 hover:underline" href="/calculators">
         {"<"} Back to calculator hub
       </Link>
       <header className="card">
@@ -19,6 +19,9 @@ export default function SalaryPage() {
         <p className="mt-2 text-slate-300">
           Convert hourly rates into annual and monthly pay estimates to evaluate job offers
           and budget faster.
+        </p>
+        <p className="mt-3 text-sm text-slate-400">
+          Use an example role, then fine-tune your hourly rate, hours, or deduction estimate.
         </p>
       </header>
       <SalaryCalculator />

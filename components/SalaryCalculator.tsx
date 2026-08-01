@@ -41,6 +41,9 @@ export function SalaryCalculator() {
       <section className="card grid gap-4 sm:grid-cols-3">
         <div className="sm:col-span-3">
           <p className="label">Scenario presets</p>
+          <p className="mt-1 text-sm text-slate-400">
+            Use a real-world pay setup as a shortcut, then adjust rate, hours, or deductions.
+          </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {scenarios.map((scenario) => (
               <button
@@ -106,6 +109,9 @@ export function SalaryCalculator() {
 
       <section className="card">
         <h2 className="text-xl font-semibold text-white">Estimated Results</h2>
+        <p className="mt-2 text-sm text-slate-400">
+          Gross and net pay update immediately when you change any number.
+        </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <div>
             <p className="text-xs uppercase tracking-wide text-slate-400">Annual gross</p>

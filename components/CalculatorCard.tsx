@@ -23,7 +23,7 @@ export function CalculatorCard({ title, description, href }: CalculatorCardProps
       </div>
 
       <div className="mt-6 flex items-center justify-between border-t border-slate-800 pt-4 text-sm font-semibold text-brand-300">
-        <span>Open calculator</span>
+        <span>Open and adjust</span>
         <span className="text-lg transition group-hover:translate-x-0.5">→</span>
       </div>
     </Link>

@@ -4,11 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/calculators/mortgage", label: "Mortgage" },
-  { href: "/calculators/loan", label: "Loan" },
-  { href: "/calculators/salary", label: "Salary" },
-  { href: "/calculators/tax", label: "Tax" },
-  { href: "/us", label: "US Templates" }
+  { href: "/us", label: "States" }
 ];
 
 export function SiteHeader() {
@@ -55,10 +51,10 @@ export function SiteHeader() {
           </nav>
 
           <Link
-            href="/us"
+            href="/calculators"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-500 to-emerald-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-brand-950/30 transition hover:brightness-110"
           >
-            Explore calculators
+            All calculators
           </Link>
         </div>
       </div>

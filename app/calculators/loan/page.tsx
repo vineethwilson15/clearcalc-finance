@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function LoanPage() {
   return (
     <div className="space-y-6">
-      <Link className="text-sm text-brand-300 hover:underline" href="/">
+      <Link className="text-sm text-brand-300 hover:underline" href="/calculators">
         {"<"} Back to calculator hub
       </Link>
       <header className="card">
@@ -19,6 +19,9 @@ export default function LoanPage() {
         <p className="mt-2 text-slate-300">
           Estimate monthly EMI and total interest for fixed-rate loans so you can compare
           repayment options quickly.
+        </p>
+        <p className="mt-3 text-sm text-slate-400">
+          Try a preset loan type first, then adjust amount, APR, or term to compare options.
         </p>
       </header>
       <LoanCalculator />

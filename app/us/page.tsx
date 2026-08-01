@@ -4,9 +4,9 @@ import { categoryLabels, usSeoTemplates } from "@/lib/seo-pages";
 import { usStates } from "@/lib/us-states";
 
 export const metadata: Metadata = {
-  title: "US Finance Calculator Templates",
+  title: "US State Finance Pages",
   description:
-    "SEO landing index for US finance calculator templates across mortgage, loan, tax, and salary queries."
+    "Browse state-specific finance pages for mortgage, loan, tax, salary, tax, and take-home pay planning."
 };
 
 export default function UsSeoIndexPage() {
@@ -19,9 +19,9 @@ export default function UsSeoIndexPage() {
   return (
     <div className="space-y-6">
       <header className="card">
-        <h1 className="text-3xl font-bold text-white">US SEO Template Index</h1>
+        <h1 className="text-3xl font-bold text-white">US State Finance Pages</h1>
         <p className="mt-2 text-slate-300">
-          Browse location-specific finance calculators for tax, salary, mortgage, and loan planning.
+          Browse state-specific finance pages for tax, salary, mortgage, and loan planning.
         </p>
       </header>
 
@@ -43,12 +43,12 @@ export default function UsSeoIndexPage() {
       ))}
 
       <section className="card">
-        <h2 className="text-2xl font-semibold text-white">State-Level Launch Pages</h2>
+        <h2 className="text-2xl font-semibold text-white">State coverage</h2>
         <p className="mt-2 text-slate-300">
-          50 state templates are generated for tax and take-home pay intent.
+          All 50 states are covered. Each state has a tax page and a take-home pay page.
         </p>
-        <div className="mt-4 grid gap-2 sm:grid-cols-2">
-          {usStates.slice(0, 12).map((state) => (
+        <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {usStates.map((state) => (
             <div key={state.slug} className="rounded-lg border border-slate-800 p-3 text-sm text-slate-300">
               <p className="font-semibold text-white">{state.name}</p>
               <div className="mt-1 flex gap-3">

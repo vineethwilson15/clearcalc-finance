@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
@@ -42,7 +43,7 @@ export default function RootLayout({
           content="FE9qQUWzHeN9N6RWPtyJeY5xzup7rIdWnPsVoJyXEWA"
         />
       </head>
-      <body>
+      <body className="flex flex-col">
         {shouldLoadAdSense ? (
           <Script
             async
@@ -52,7 +53,8 @@ export default function RootLayout({
           />
         ) : null}
         <SiteHeader />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

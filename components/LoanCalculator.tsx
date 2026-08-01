@@ -49,6 +49,9 @@ export function LoanCalculator() {
       <section className="card grid gap-4 sm:grid-cols-3">
         <div className="sm:col-span-3">
           <p className="label">Scenario presets</p>
+          <p className="mt-1 text-sm text-slate-400">
+            Start with a common loan type, then change the values to compare repayment options.
+          </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {scenarios.map((scenario) => (
               <button
@@ -113,6 +116,9 @@ export function LoanCalculator() {
 
       <section className="card">
         <h2 className="text-xl font-semibold text-white">Estimated Results</h2>
+        <p className="mt-2 text-sm text-slate-400">
+          EMI, interest, and total payment recalculate as soon as you edit the inputs.
+        </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <div>
             <p className="text-xs uppercase tracking-wide text-slate-400">Monthly EMI</p>
